@@ -136,7 +136,7 @@ const ChatInterface: React.FC = () => {
           disabled={isLoading}
         />
         <button onClick={handleSendMessage} disabled={isLoading}>Send</button>
-        <input type="file" onChange={handleFileUpload} disabled={isLoading} />
+        <input type="file" onChange={handleFileUpload} disabled={isLoading} />  {/* なんかEdgeだと反応しない場合がある？ */}
       </div>
       {isLoading && <div className="loading">Loading...</div>}
     </div>
